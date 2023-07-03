@@ -37,6 +37,7 @@ public class Esercizio1 {
 				vero = false;
 				break;
 			}
+			
 			throw new ArithmeticException("number not supported, must be between, 1 and 10, or 0 to terminate");
 		}
 		
@@ -50,9 +51,6 @@ public class Esercizio1 {
 		}
 		
 		myArray[posizione] = numero;
-		
-		
-		
 		
 	}	
 		while(vero); 
