@@ -30,7 +30,7 @@ public class Esercizio1 {
 		scanner.nextLine();
 		
 		
-        if (numero <1 || numero > 10) {
+        if (numero < 1 || numero > 10) {
 			
 			if (numero == 0) {
 				System.out.println("gioco terminato");
