@@ -20,6 +20,7 @@ public class Esercizio1 {
 		} 
 		
 		
+		try {
 		
 		do {
 		
@@ -30,6 +31,8 @@ public class Esercizio1 {
 		scanner.nextLine();
 		
 		
+			
+		
         if (numero < 1 || numero > 10) {
 			
 			if (numero == 0) {
@@ -39,29 +42,40 @@ public class Esercizio1 {
 			}
 			
 			throw new ArithmeticException("number not supported, must be between, 1 and 10, or 0 to terminate");
-		}
+			
+        }
 		
 		System.out.println("inserisci la posizione");
 		int posizione = scanner.nextInt();
 		scanner.nextLine();
 		
-		if (posizione > 4) {
+		if (posizione < 1 || posizione > 5) {
 		  
-			throw new ArithmeticException("number must be metween 0 and 4");
+			throw new ArithmeticException("number must be metween 1 and 5");
 		}
 		
-		myArray[posizione] = numero;
+		myArray[posizione] = numero-1;
 		
-	}	
+		}
+		
 		while(vero); 
 			
 			System.out.println(Arrays.toString(myArray));
 			
+		}
 		
+		catch (Error e) {
+			
+			e.printStackTrace();
+			
+		}
 		
 		scanner.close();
+		
+	}
+	}
         
-}
-}
+
+
 
 
